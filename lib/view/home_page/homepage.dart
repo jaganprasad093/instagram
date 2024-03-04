@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/core/constants/image_constants.dart';
 import 'package:netflix/view/dummydb.dart';
 import 'package:netflix/view/home_page/widgets/coustom_story_avathar.dart';
+import 'package:netflix/view/home_page/widgets/user_post.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({
@@ -34,18 +35,31 @@ class _HomepageState extends State<Homepage> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          Row(
-            children: List.generate(
-                DummyDb.storylist.length,
-                (index) => StoryAvathar(
-                      propic: DummyDb.storylist[index]["propic"],
-                      islive: DummyDb.storylist[index]["islive"],
-                      username: DummyDb.storylist[index]["username"],
-                    )),
-          )
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: List.generate(
+                  DummyDb.storylist.length,
+                  (index) => StoryAvathar(
+                        propic: DummyDb.storylist[index]["propic"],
+                        islive: DummyDb.storylist[index]["islive"],
+                        username: DummyDb.storylist[index]["username"],
+                      )),
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: DummyDb.homepostlist.length,
+              itemBuilder: (context, index) => UserPosts(
+                  postimages: DummyDb.homepostlist[index]["posts"],
+                  isliked: DummyDb.homepostlist[index]["isliked"],
+                  profilepic: DummyDb.homepostlist[index]["propic"],
+                  username: DummyDb.homepostlist[index]["username"],
+                  location: DummyDb.homepostlist[index]["location"]),
+            )
+          ],
+        ),
       ),
     );
   }

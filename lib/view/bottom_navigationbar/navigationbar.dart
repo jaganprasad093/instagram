@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/view/home_page/homepage.dart';
+import 'package:netflix/view/search_screen/searchscreen.dart';
 import 'package:netflix/view/select_account/select_account.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
@@ -12,9 +13,7 @@ class BottomNavBarScreen extends StatefulWidget {
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   List<Widget> screesList = [
     Homepage(),
-    Container(
-      color: Colors.yellow,
-    ),
+    Searchscreen(),
     Container(
       color: Colors.white,
     ),

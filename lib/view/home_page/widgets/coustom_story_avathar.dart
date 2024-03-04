@@ -24,7 +24,7 @@ class StoryAvathar extends StatelessWidget {
                   radius: 27,
                   backgroundColor: Colors.white,
                   child: CircleAvatar(
-                    backgroundImage: NetworkImage(""),
+                    backgroundImage: NetworkImage(propic),
                     radius: 24,
                   ),
                 ),
@@ -48,7 +48,7 @@ class StoryAvathar extends StatelessWidget {
                   )
                 : SizedBox()
           ]),
-          Text("t_k")
+          Text(username)
         ],
       ),
     );
