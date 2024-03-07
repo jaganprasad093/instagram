@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/view/add_image_screen/add_image_screen.dart';
 import 'package:netflix/view/home_page/homepage.dart';
+import 'package:netflix/view/profile/profile.dart';
 import 'package:netflix/view/search_screen/searchscreen.dart';
 import 'package:netflix/view/select_account/select_account.dart';
 
@@ -20,9 +22,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
     Container(
       color: Colors.blue,
     ),
-    Container(
-      color: Colors.green,
-    ),
+    Profilepage()
   ];
 
   int selectedIndex = 0;
@@ -39,7 +39,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => LoginScreen(),
+                  builder: (context) => AddImageScreen(),
                 ));
           }
         },

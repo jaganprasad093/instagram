@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/core/constants/color_constants.dart';
+import 'package:netflix/view/home_page/widgets/user_post.dart';
+import 'package:netflix/view/search_screen/categories_widgets/categories.dart';
+import 'package:netflix/view/search_screen/categories_widgets/customgrid.dart';
 
 class Searchscreen extends StatefulWidget {
   const Searchscreen({super.key});
@@ -33,6 +36,26 @@ class _SearchscreenState extends State<Searchscreen> {
             IconButton(onPressed: () {}, icon: Icon(Icons.select_all_sharp))
           ],
         ),
+      ),
+      body: Column(
+        children: [
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Container(
+                child: Row(
+              children: List.generate(10, (index) => Categories()),
+            )),
+          ),
+          Expanded(
+              child: SingleChildScrollView(
+                  child: Column(
+            children: List.generate(
+                3,
+                (index) => CustomGrid(
+                      iseven: index.isEven,
+                    )),
+          )))
+        ],
       ),
     );
   }

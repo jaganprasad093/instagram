@@ -7,33 +7,33 @@ class DummyDb {
       "islive": true,
     },
     {
-      "username": "mine",
+      "username": "ft__jxxn",
       "propic":
-          "https://images.pexels.com/photos/1759530/pexels-photo-1759530.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "islive": false,
     },
     {
-      "username": "user2",
+      "username": "jagan_z",
       "propic":
-          "https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=600",
       "islive": true,
     },
     {
-      "username": "user3",
+      "username": "xxxnan",
       "propic":
-          "https://images.pexels.com/photos/1759530/pexels-photo-1759530.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=600",
       "islive": false,
     },
     {
       "username": "jaan",
       "propic":
-          "https://images.pexels.com/photos/1759530/pexels-photo-1759530.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "https://images.pexels.com/photos/1819483/pexels-photo-1819483.jpeg?auto=compress&cs=tinysrgb&w=600",
       "islive": false,
     },
     {
-      "username": "user5",
+      "username": "ft_ubru",
       "propic":
-          "https://images.pexels.com/photos/1759530/pexels-photo-1759530.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "https://images.pexels.com/photos/1898555/pexels-photo-1898555.jpeg?auto=compress&cs=tinysrgb&w=600",
       "islive": false,
     },
   ];
